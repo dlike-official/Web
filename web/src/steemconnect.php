@@ -1,13 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: faisal
- * Date: 6/1/18
- * Time: 8:43 PM
- */
 session_start();
 class SteemConnect{
-    public $url = "https://v2.steemconnect.com/api/me";
+    public $url = "https://steemconnect.com/api/me";
     public $response = [];
     public $postFields = [];
     public $headers = array(
