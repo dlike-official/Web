@@ -6,7 +6,7 @@ if (!isset($_SESSION['code'])) {
     $authstr = "authorization: " . $_SESSION['code'];
     $check = curl_init();
     curl_setopt_array($check, array(
-        CURLOPT_URL => "https://v2.steemconnect.com/api/me",
+        CURLOPT_URL => "https://steemconnect.com/api/me",
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
         CURLOPT_MAXREDIRS => 1,
